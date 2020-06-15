@@ -1,4 +1,4 @@
 function elevate() {
-	Start-Process -FilePath "powershell" -Verb RunAs
+	Start-Process -FilePath "pwsh" -Verb RunAs
 }
 

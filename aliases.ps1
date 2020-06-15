@@ -1,1 +1,2 @@
-Set-Alias -Name "fuck" -Value "echo"
+Set-Alias -Name "path" -Value "Get-PathEnvironmentVariable"
+Set-Alias -Name "addpath" -Value "Update-PathEnvironmentVariable"
