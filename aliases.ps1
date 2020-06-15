@@ -1,0 +1,1 @@
+Set-Alias -Name "fuck" -Value "echo"
