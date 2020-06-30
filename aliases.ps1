@@ -3,3 +3,4 @@ Set-Alias -Name "addpath" -Value "Update-PathEnvironmentVariable"
 Set-Alias -Name "grep" -Value "rg"
 Set-Alias -Name "vim" -Value "nvim"
 Set-Alias -Name "vi" -Value "nvim"
+
