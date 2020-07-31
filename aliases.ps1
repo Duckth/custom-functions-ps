@@ -5,4 +5,3 @@ Set-Alias -Name "vim" -Value "nvim"
 Set-Alias -Name "vi" -Value "nvim"
 Set-Alias -Name "hsd" -Value "horrible-downloader"
 Set-Alias -Name "hsdl" -Value "horrible-downloader"
-
