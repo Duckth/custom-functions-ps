@@ -1,4 +1,3 @@
-# gt: shorthand for "go to", a custom version of cd that saves the cd location.
 function gt($to) {
     $path = Resolve-Path $to -ErrorAction Stop
     Set-Location $path -ErrorAction Stop
