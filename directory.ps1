@@ -1,3 +1,7 @@
+function cdl($to) {
+    Set-Location $to && Get-ChildItem
+}
+
 function gt($to) {
     $path = Resolve-Path $to -ErrorAction Stop
     Set-Location $path -ErrorAction Stop
