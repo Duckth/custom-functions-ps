@@ -1,5 +1,5 @@
 function cdl($to) {
-    Set-Location $to && Get-ChildItem
+	Set-Location $to && Get-ChildItem
 }
 
 function gt($to) {
