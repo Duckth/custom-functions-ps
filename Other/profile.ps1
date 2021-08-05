@@ -30,17 +30,17 @@ Write-Host "$CurUser" -ForegroundColor Blue
 Write-Host ''
 
 #Custom prompt
-function Prompt {
+#function Prompt {
 
-Write-Host -NoNewline "pwsh "
-Write-Host -NoNewLine "$((Get-Location).Path)" -ForegroundColor Blue
-Write-Host -NoNewLine " ~> " -ForegroundColor Red
+#Write-Host -NoNewline "pwsh "
+#Write-Host -NoNewLine "$((Get-Location).Path)" -ForegroundColor Blue
+#Write-Host -NoNewLine " ~> " -ForegroundColor Red
 
-$host.UI.RawUI.WindowTitle = "pwsh >> Current DIR: $((Get-Location).Path)"
+#$host.UI.RawUI.WindowTitle = "pwsh >> Current DIR: $((Get-Location).Path)"
 
-Return " "
+#Return " "
 
-}
+#}
 
 
 # Chocolatey profile
@@ -49,6 +49,17 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
+# Starship stuff
+Invoke-Expression (&starship init powershell)
+$ENV:STARSHIP_CONFIG = "$HOME/dotfiles/starship/starship.toml"
+
 Set-Alias -Name ipconfig -Value Get-NetIPConfiguration
+
+# Custom variables
+$VIMFILE = "$HOME\.vimrc"
+$VIMDIR = "$HOME\AppData\Local\nvim"
+
+
+
 
 
